@@ -25,7 +25,7 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>Happy Propose Day 🤗</h1>
+      <h1>Happy Propose Day, <span id="displayName"></span> 🤗</h1>
       <p>Do You Love Me💕😭🤌</p>
 
       <div class="btn">
@@ -33,5 +33,15 @@
         <a id="noButton" href="no1.html">No</a>
       </div>
     </div>
+    <script>
+      // Retrieve stored name from localStorage
+      let storedName = localStorage.getItem("username");
+
+      if (storedName) {
+          document.getElementById("displayName").innerText = storedName; // Display name in H1
+      } else {
+          document.getElementById("displayName").innerText = ""; // Default text if no name found
+      }
+  </script>
   </body>
 </html>
