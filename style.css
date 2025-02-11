@@ -17,7 +17,13 @@ body {
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
 }
-
+#urname{
+	width: 100%;
+	padding: 10px;
+	padding-left: 0px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
 #submit-btn {
 	background-color: #4CAF50;
 	color: #fff;
