@@ -30,12 +30,14 @@ const febHolidays = [
 "But we overcame most of them together 🥰",  
 "And that made me realize how important you are in my life ❤️"  ,
 "This entire love journey is just for you 😘"  ,
-"My unconditional love, my private variable 💖",  
-"Please take care of the one who truly loves you ❤️" , 
+"My unconditional love, my private variable 💖", 
 "I'm binary in love; you're the only '1' in my life 🥰" , 
 "Thanks to God for bringing us together 🙏"  ,
 "You're the love of my life ❤️" , 
-"I love you so much ❤️"  
+"I Miss you a lot ra ❤️",
+"One Hug is the medicine of all stress 🥰",
+"Your presence will tells me value of smile 🥰"
+  
 
 ];
 
