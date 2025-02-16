@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
         async
         src="https://tenor.com/embed.js"
       ></script>
-      <h1>Happy Valentine's Day  <span id="displayName"></span> 🤗</h1>
+      <h1>Happy Propose Day 🤗</h1>
       <p>Do You Love Me💕😭🤌</p>
 
       <div class="btn">
@@ -33,7 +33,7 @@
         <a id="noButton" href="no1.html">No</a>
       </div>
     </div>
-<!--     <script>
+    <script>
       // Retrieve stored name from localStorage
       let storedName = localStorage.getItem("username");
 
@@ -42,6 +42,62 @@
       } else {
           document.getElementById("displayName").innerText = ""; // Default text if no name found
       }
-  </script> -->
+  </script>
+  let savedUsername = localStorage.getItem("storedUsername"); // Retrieve stored username
+if (savedUsername) {
+    document.getElementById("welcomeMessage").innerText = `Welcome, ${savedUsername}!`; 
+}
+
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out</title>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="tenor-gif-embed"
+        data-postid="22885016"
+        data-share-method="host"
+        data-aspect-ratio="1.04918"
+        data-width="100%"
+      >
+        <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>
+        from
+        <a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+
+      <!-- Updated H1 with dynamic username -->
+      <h1 id="welcomeMessage">Happy Propose Day 🤗</h1>  
+      <p>Do You Love Me💕😭🤌</p>
+
+      <div class="btn">
+        <a id="yesButton" href="yes.html">Yes</a>
+        <a id="noButton" href="no1.html">No</a>
+      </div>
+    </div>
+
+    <script>
+      // Retrieve stored username from localStorage
+      let savedUsername = localStorage.getItem("storedUsername");
+
+      // If username is found, update the H1 text
+      if (savedUsername) {
+          document.getElementById("welcomeMessage").innerText = `Happy Propose Day, ${savedUsername}! 🤗`;
+      }
+    </script>
+
   </body>
 </html>
+

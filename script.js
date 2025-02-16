@@ -16,3 +16,21 @@ form.addEventListener('submit', (e) => {
 		resultDiv.innerHTML = 'Nuvu na pandi pella kadhu -vellu vellu pandi pella ni ra manu : go fast';
 	}
 });
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    let username = document.getElementById("urname").value.trim();
+    let password = document.getElementById("code").value.trim();
+    let resultDiv = document.getElementById("result");
+
+    const secretCode = "Pandi"; // Correct password
+    const nextPageUrl = "main.html"; // Redirect page
+
+    if (username !== "" && password === secretCode) {
+        localStorage.setItem("storedUsername", username); // Store username
+        resultDiv.innerHTML = "Waste fellow loves you Pandi❤️😘"; 
+        setTimeout(() => { window.location.href = nextPageUrl; }, 1500); // Redirect after 1.5s
+    } else {
+        resultDiv.innerHTML = "Nuvu na pandi pella kadhu -vellu vellu pandi pella ni ra manu : go fast";
+    }
+});
