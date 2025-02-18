@@ -3,7 +3,7 @@ const codeInput = document.getElementById('code');
 const submitBtn = document.getElementById('submit-btn');
 const resultDiv = document.getElementById('result');
 
-const secretCode = 'Pandi'; // Replace with your secret code
+const secretCode = 'Babu'; // Replace with your secret code
 const nextPageUrl = 'main.html'; // Replace with the URL of the new page
 
 form.addEventListener('submit', (e) => {
@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     let password = document.getElementById("code").value.trim();
     let resultDiv = document.getElementById("result");
 
-    const secretCode = "Pandi"; // Correct password
+    const secretCode = "Babu"; // Correct password
     const nextPageUrl = "main.html"; // Redirect page
 
     if (username !== "" && password === secretCode) {
@@ -31,6 +31,6 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         resultDiv.innerHTML = "Waste fellow loves you Pandi❤️😘"; 
         setTimeout(() => { window.location.href = nextPageUrl; }, 1500); // Redirect after 1.5s
     } else {
-        resultDiv.innerHTML = "Nuvu na pandi pella kadhu -vellu vellu pandi pella ni ra manu : go fast";
+        resultDiv.innerHTML = "Feb-16-2025";
     }
 });
