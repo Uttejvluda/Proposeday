@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     let password = document.getElementById("code").value.trim();
     let resultDiv = document.getElementById("result");
 
-    const secretCode = "Babu"; // Correct password
+    const secretCode = "Uttejs_Rowdy"; // Correct password
     const nextPageUrl = "main.html"; // Redirect page
 
     if (username !== "" && password === secretCode) {
@@ -31,6 +31,6 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         resultDiv.innerHTML = "Waste fellow loves you Pandi❤️😘"; 
         setTimeout(() => { window.location.href = nextPageUrl; }, 1500); // Redirect after 1.5s
     } else {
-        resultDiv.innerHTML = "Feb-16-2025";
+        resultDiv.innerHTML = "Mari Bharistav ha ee Waste Gani";//Feb-16-2025
     }
 });
