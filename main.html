@@ -56,12 +56,11 @@ if (savedUsername) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ask Her Out</title>
+
     <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
     <div class="container">
-      <!-- Tenor GIF -->
       <div
         class="tenor-gif-embed"
         data-postid="22885016"
@@ -79,35 +78,30 @@ if (savedUsername) {
         src="https://tenor.com/embed.js"
       ></script>
 
-      <!-- Dynamic greeting -->
-      <h1 id="welcomeMessage">Happy Birthday Potti 🤗</h1>
-      <p>Do You Marry Me 💕😭🤌</p>
-
-      <!-- Image loaded from public Google Drive -->
-      <div id="image-container">
-        <img 
-          src="https://drive.google.com/uc?export=view&id=19WjBjL2LF4OwlbTJqTQ9_-HP_61PE5ts" 
-          alt="Birthday Image" 
-          width="300"
-        />
-      </div>
-
-      <!-- Buttons -->
+      <!-- Updated H1 with dynamic username-->
+      <h1 id="welcomeMessage">Happy Birthday Potti 🤗</h1>  
+      <p>Do You Marry Me💕😭🤌</p>
+<!-- <img src="https:https://drive.google.com/file/d/19WjBjL2LF4OwlbTJqTQ9_-HP_61PE5ts/view?usp=drivesdk.jpg" alt="Image from GitHub">
+<img src="https:https://drive.google.com/file/d/19WjBjL2LF4OwlbTJqTQ9_-HP_61PE5ts/view?usp=drivesdk" alt="Image from GitHub" width="300"> -->
+<!-- Container where image will appear -->
+  
+<!--  <img src="https://drive.google.com/file/d/19WjBjL2LF4OwlbTJqTQ9_-HP_61PE5ts/view?usp=drivesdk" alt="Sample Image" width="300" /> -->
       <div class="btn">
         <a id="yesButton" href="yes.html">Yes</a>
         <a id="noButton" href="no1.html">No</a>
       </div>
     </div>
 
-    <!-- Script to update username greeting -->
     <script>
       // Retrieve stored username from localStorage
       let savedUsername = localStorage.getItem("storedUsername");
 
-      // If username is found, update the greeting
+      // If username is found, update the H1 text
       if (savedUsername) {
-        document.getElementById("welcomeMessage").innerText = `Happy Birthday Potti, ${savedUsername}! 🤗`;
+          document.getElementById("welcomeMessage").innerText = `Happy Birthday Potti, ${savedUsername}! 🤗`;
       }
     </script>
+
   </body>
 </html>
+
